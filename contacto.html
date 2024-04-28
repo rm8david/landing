@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="formu">
+        <header>
+            <a href="curriculum.html" class="logo">David Rodríguez</a>
+            <ul class="navbar">
+                <li>
+                    <a href="index.html">Quien soy</a>
+                </li>
+                <li>
+                    <a href="curriculum.html">CV</a>
+                </li>
+                <li>
+                    <a href="proyectos.html">Proyectos destacados</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </header>
+        <div class="contacto">
+                <form name="contactar" action="post" method="formulario.php">
+                    <h2>Ponerse en contacto</h2>
+                    <p>Hablemos de su proyecto</p>
+                    <ion-icon name="person-outline"></ion-icon><input type="text" placeholder="Nombre" class="input1" required>
+                    <ion-icon name="call-outline"></ion-icon><input type="tel" maxlength="9" minlength="9" placeholder="Telefono" class="input1" required>
+                    <ion-icon name="mail-unread-outline"></ion-icon><input type="email" placeholder="eMail" class="input1" required>
+                    <br>
+                    <div id="mensaje">
+                    <textarea name="su mensaje"  cols="80" rows="10" placeholder="su mensaje" required minlength="30"></textarea>
+                    </div>
+                    <br>
+                    <div id="boton">
+                        <input type="submit" value="enviar" class="boton">
+                    </div>
+
+                </form>
+        </div>
+        <div class="copyright">
+            <p>&copy; Web personal creada para la materia de lenguaje de Marcas del CFGS DAM de UNIR FP</p>
+            <br>
+            <ul class="redesSociales">
+                    <li>
+                        <a href="mailto:rm8david@gmail.com"><ion-icon name="mail-outline"></ion-icon></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/david-rodr%C3%ADguez-mart%C3%ADn-a55ab9151/"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/rm8david"><ion-icon name="logo-github"></ion-icon></a>
+                    </li>
+            </ul>
+        </div>
+    </section>
+    
+</body>
+</html>

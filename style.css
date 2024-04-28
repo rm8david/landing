@@ -1,0 +1,385 @@
+
+/* Fuentes importadas de Google */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+ *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Source Sans 3";
+}
+/* contenido de la pagina prinipal index */
+body{
+    background-color: rgba(192, 192, 192, 0.604);
+}
+/* Contenido del section, en general de todo el contenedor */
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+/* COntenido del header que contiene el logo con nuestro nombre */
+header{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: rgb(137, 66, 138);
+    border-radius: 5px;
+    padding: 0px 10px;
+    font-family: "Open Sans";
+    font-weight: 600;
+}
+
+header .logo:hover{
+    color: rgb(137, 66, 188);
+    background: white;
+    transition: 0.8s;
+}
+/* menu de navegacion, es comun a todas las webs */
+header .navbar{
+    position: relative;
+    display: flex;
+}
+
+header .navbar li{
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navbar li a{
+    text-decoration: none;
+    color: yellow;
+    font-weight: 700;
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+header .navbar li a:hover{
+    border-bottom:5px solid rgb(137, 66, 188) ;
+    padding: 5px;
+}
+
+/*Contenido de la web principal*/
+
+.contenido{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    
+}
+.contenido .tituloBox{
+    background-color: antiquewhite;
+    position: relative;
+    max-width: 600px;
+    text-align: center;
+    height: 70vh;
+}
+
+.contenido .tituloBox h2{
+    font-size: 4.5em;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 255, 0.408);
+    color: white;
+}
+
+.contenido .tituloBox h2 span{
+    background: blue;
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family:"Open Sans" ;
+    font-weight: 600;
+    border-radius: 35px;
+}
+
+.contenido .tituloBox p{
+    font-size: 1.8em;
+    line-height: 1.5;
+    color: blue;
+    font-family: "Open Sans";
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.contenido .tituloBox a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: blue;
+    font-weight: 500;
+    background: white;
+    padding: 10px 20px;
+    margin: left 30px;
+    border-radius: 20px;
+    letter-spacing: 3px;
+    border: 2px;
+    border-style: groove;
+}
+
+.contenido .tituloBox a:hover{
+    background: rgb(137, 66, 188);
+    color: white;
+    transition: 0.5s;
+}
+/* propiedades de la imagen de la web principal */
+.contenido .imgBox{
+   
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 0px;
+    
+    z-index: -5;
+}
+
+.contenido .imgBox img{
+    height: 70vh;
+    /* width: 100%; */
+}
+
+/*Copyright, esto es comun a todas las paginas*/
+
+.copyright{
+    position: absolute;
+    bottom: 0px;
+    left: 800px;
+    margin-bottom: 20px;
+    padding: 0px 100px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright p{
+    color: white;
+    text-align: center;
+    margin-left: 100px;
+}
+/*Redes sociales tambien sirve para todas las paginas*/
+
+.redesSociales{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 30px;
+    list-style: none;
+}
+.redesSociales li{
+    padding: 5px;
+}
+.redesSociales li a{
+    color: white;
+    font-size: 2.5em;
+}
+.redesSociales li a:hover{
+    transition: 0.4s;
+    color: beige;
+    background-color: cadetblue;
+} 
+
+/* contenido de la web curruculum */
+.scv{
+    background-image: url(img/backgroundCV.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.cv{
+    margin-bottom: 100px;
+    padding:50px;
+    width: 80vw;
+    display: flex;
+    background-color:rgba(237, 247, 188, 0.743);
+}
+.izquierda, .derecha{
+    padding-bottom: 0px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 15px;
+    padding-bottom: 0px;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.izquierda li, .derecha li{
+    list-style: none;
+}
+.izquierda h2, .derecha h2{
+    color: white;
+    text-transform: uppercase;
+}
+.izquierda h2 span, .derecha h2 span{
+    border-radius: 35px;
+    background: rgb(25, 62, 174);
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+/* Pagina de fomulario de contacto */
+#formu{
+    background-image: url(img//backgroundFORM.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.contacto{
+    height: 70vh;
+    width: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    background-color: rgba(255, 255, 255, 0.574);
+    border-radius: 40px;
+    border-style: none;
+}
+form h2{
+    margin-top: 60px;
+    text-align: center;
+    font-size: 3em;
+    font-family: "Open Sans" ;
+    margin-bottom: 35px;
+}
+form p{
+    text-align: center;
+    font-family: "Open Sans" ;
+    font-style: italic;
+    font-size: 1em;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+.input1{
+    height: 2em;
+    text-align: center;
+    margin-left: 2px;
+    margin-right: 30px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+form input:focus, form textarea:focus{
+    background-color: rgba(249, 249, 138, 0.635);
+}
+#mensaje{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#mensaje textarea{
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    resize: none;
+
+}
+#boton{
+    text-align: right;
+}
+form .boton{
+    background-color: rgb(255,219,88);
+    font-weight: 600;
+    font-size: 1em    ;
+    margin-top: 20px;
+    width: 130px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+}
+form .boton:hover{
+    background-color:rgb(221, 173, 0);
+    transition: 0.3s;
+}
+/* Galeria de proyectos */
+.ptitle{
+    margin-top: 100px;
+    display: block;
+    text-align: center;
+    font-size: 2.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0 0 30px rgb(23, 25, 30);
+}
+.fotos{
+    width: 100%;
+    margin: 0 auto;
+}
+.container:after{
+    /* para mostrar los elementos aunque estos sean flotantes */
+    content: "";
+    display: block;
+    height: 0px;
+    clear: both;
+}
+.container{
+    width: 100%;
+    margin: 0 5%;
+}
+.container div{
+    width: 30%;
+    height: auto;
+    display: inline;
+    float: left;
+    margin: 0% 3% 0% 0%;
+    padding: 0;
+}
+.container div img{
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 10px #666;
+    border: 5px solid#fff;
+}
+/* texto descripcion para no mostrarlo por defecto */
+.container div img~span{
+    width: 100%;
+    display: block;
+    opacity: 0;
+    margin: 0;
+    padding: 2px 5px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 10px #666;
+    text-align: center;
+}
+/* se muestre la descropcion al ponerse encima de la imagen */
+.container div img:hover+span{
+    opacity: 1;
+}
+/* comportamiento de las imagenes al ponerse por encima del contenedor */
+.container:hover div{
+    opacity: 0.2;
+    transform: scale(0.7);
+    transition: 1.5s;
+}
+/* se especifica que la imagen seleccionada se amplie */
+.container:hover div:hover{
+    opacity: 1;
+    transform: scale(1.5);
+}
